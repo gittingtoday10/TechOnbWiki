@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="test.wiki"
+    errors="1" failures="0" hostname="" id="" package="wiki" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new Selenium Server session: [Error] ECONNRESET socket hang up
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new Selenium Server session: [Error] ECONNRESET socket hang up"><![CDATA[
+      Error: An error occurred while creating a new Selenium Server session: [Error] ECONNRESET socket hang up
+    at Timeout._onTimeout (/Users/ram/Tech-Onboarding/AppiumAutomate/node_modules/nightwatch/lib/transport/selenium-webdriver/httpclient.js:90:27)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Search for BrowserStack" classname="test.wiki">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,7 @@
+[35m[Appium][39m Welcome to Appium v1.22.3
+[35m[HTTP][39m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+Fatal Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at doListen (node:net:1937:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)

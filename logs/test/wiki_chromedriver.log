@@ -1,0 +1,2097 @@
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1683701992.157][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "androidPackage": "com.android.chrome",
+            "args": [  ],
+            "w3c": true
+         }
+      },
+      "firstMatch": [ {
+
+      } ]
+   }
+}
+[1683701992.157][DEBUG]: Sending adb command: host:devices
+[1683701992.160][DEBUG]: Received adb response: emulator-5554	device
+
+[1683701992.161][DEBUG]: Sending adb command: host:transport:emulator-5554|shell:pm path com.android.chrome
+[1683701992.178][DEBUG]: Received adb response: package:/product/app/Chrome64/Chrome64.apk
+
+[1683701992.178][DEBUG]: Sending adb command: host:transport:emulator-5554|shell:am set-debug-app --persistent com.android.chrome
+[1683701992.198][DEBUG]: Received adb response: 
+[1683701992.198][DEBUG]: Sending adb command: host:transport:emulator-5554|shell:pm clear com.android.chrome
+[1683701992.219][DEBUG]: Received adb response: Success
+
+[1683701992.220][DEBUG]: Sending command line file: /data/local/tmp/chrome-command-line
+[1683701992.230][DEBUG]: Sending adb command: host:transport:emulator-5554|shell:am start -W -n com.android.chrome/com.google.android.apps.chrome.Main -d data:,
+[1683701992.756][DEBUG]: Received adb response: Starting: Intent { dat=data:, cmp=com.android.chrome/com.google.android.apps.chrome.Main }
+Status: ok
+LaunchState: COLD
+Activity: com.android.chrome/com.google.android.apps.chrome.Main
+TotalTime: 506
+WaitTime: 510
+Complete
+
+[1683701992.756][DEBUG]: Sending adb command: host-serial:emulator-5554:forward:tcp:0;localabstract:chrome_devtools_remote
+[1683701992.757][DEBUG]: ADB server responded with "OKAYOKAY" instead of "OKAY".
+[1683701992.757][DEBUG]: Received adb response: 52337
+[1683701992.757][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701992.785][DEBUG]: DevTools HTTP Request failed
+[1683701992.836][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701992.838][DEBUG]: DevTools HTTP Request failed
+[1683701992.889][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701992.890][DEBUG]: DevTools HTTP Request failed
+[1683701992.941][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701992.943][DEBUG]: DevTools HTTP Request failed
+[1683701992.994][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701992.995][DEBUG]: DevTools HTTP Request failed
+[1683701993.046][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.048][DEBUG]: DevTools HTTP Request failed
+[1683701993.100][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.105][DEBUG]: DevTools HTTP Request failed
+[1683701993.155][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.160][DEBUG]: DevTools HTTP Request failed
+[1683701993.210][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.215][DEBUG]: DevTools HTTP Request failed
+[1683701993.266][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.268][DEBUG]: DevTools HTTP Request failed
+[1683701993.319][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.321][DEBUG]: DevTools HTTP Request failed
+[1683701993.372][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.374][DEBUG]: DevTools HTTP Request failed
+[1683701993.425][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/version
+[1683701993.448][DEBUG]: DevTools HTTP Response: {
+   "Android-Package": "com.android.chrome",
+   "Browser": "Chrome/91.0.4472.114",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Linux; Android 11; sdk_gphone_arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36",
+   "V8-Version": "9.1.269.36",
+   "WebKit-Version": "537.36 (@4bb19460e8d88c3446b360b0df8fd991fee49c0b)",
+   "webSocketDebuggerUrl": "ws://localhost:52337/devtools/browser"
+}
+
+[1683701993.449][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/list
+[1683701993.452][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@4bb19460e8d88c3446b360b0df8fd991fee49c0b/inspector.html?ws=localhost:52337/devtools/page/0",
+   "id": "0",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:52337/devtools/page/0"
+} ]
+
+[1683701993.452][DEBUG]: DevTools HTTP Request: http://localhost:52337/json/list
+[1683701993.454][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@4bb19460e8d88c3446b360b0df8fd991fee49c0b/inspector.html?ws=localhost:52337/devtools/page/0",
+   "id": "0",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:52337/devtools/page/0"
+} ]
+
+[1683701993.456][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1683701993.466][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=1) 0 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();"
+}
+[1683701993.467][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=2) 0 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();"
+}
+[1683701993.468][DEBUG]: DevTools WebSocket Command: Log.enable (id=3) 0 {
+
+}
+[1683701993.468][DEBUG]: DevTools WebSocket Command: DOM.getDocument (id=4) 0 {
+
+}
+[1683701993.468][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=5) 0 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1683701993.468][DEBUG]: DevTools WebSocket Command: Page.enable (id=6) 0 {
+
+}
+[1683701993.468][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) 0 {
+
+}
+[1683701993.475][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=1) 0 {
+   "identifier": "1"
+}
+[1683701993.504][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=2) 0 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1683701993.504][DEBUG]: DevTools WebSocket Response: Log.enable (id=3) 0 {
+
+}
+[1683701993.506][DEBUG]: DevTools WebSocket Response: DOM.getDocument (id=4) 0 {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "backendNodeId": 3,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 3,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 5,
+            "childNodeCount": 0,
+            "localName": "body",
+            "nodeId": 4,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         } ],
+         "frameId": "3F99D466725D92A5EC19F87DF0E01BC4",
+         "localName": "html",
+         "nodeId": 2,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 1
+      } ],
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1683701993.506][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=5) 0 {
+
+}
+[1683701993.506][DEBUG]: DevTools WebSocket Response: Page.enable (id=6) 0 {
+
+}
+[1683701993.506][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) 0 {
+
+}
+[1683701993.506][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) 0 {
+
+}
+[1683701993.507][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated 0 {
+   "context": {
+      "auxData": {
+         "frameId": "3F99D466725D92A5EC19F87DF0E01BC4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-5539415375325038887.-7339453417609319893"
+   }
+}
+[1683701993.507][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) 0 {
+
+}
+[1683701993.507][DEBUG]: DevTools WebSocket Command: Page.enable (id=9) 0 {
+
+}
+[1683701993.508][DEBUG]: DevTools WebSocket Response: Page.enable (id=9) 0 {
+
+}
+[1683701993.508][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=10) 0 {
+
+}
+[1683701993.509][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=10) 0 {
+
+}
+[1683701993.510][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) 0 {
+   "awaitPromise": true,
+   "expression": "(function() { // Copyright (c) 2012 The Chromium Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum f...",
+   "returnByValue": true
+}
+[1683701993.525][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) 0 {
+   "result": {
+      "type": "object",
+      "value": {
+         "status": 0,
+         "value": 1
+      }
+   }
+}
+[1683701993.525][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "91.0.4472.114",
+      "chrome": {
+         "chromedriverVersion": "91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462})"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:52337"
+      },
+      "pageLoadStrategy": "normal",
+      "platformName": "android",
+      "proxy": {
+
+      },
+      "setWindowRect": false,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:largeBlob": false,
+      "webauthn:virtualAuthenticators": false
+   },
+   "sessionId": "02a94349e53928fd54ba6865bdfe5f73"
+}
+[1683701993.547][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701993.548][INFO]: Waiting for pending navigations...
+[1683701993.548][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=12) 0 {
+   "expression": "1"
+}
+[1683701993.555][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=12) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701993.556][DEBUG]: DevTools WebSocket Command: DOM.getDocument (id=13) 0 {
+
+}
+[1683701993.559][DEBUG]: DevTools WebSocket Response: DOM.getDocument (id=13) 0 {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "backendNodeId": 3,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 7,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 6
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 5,
+            "childNodeCount": 0,
+            "localName": "body",
+            "nodeId": 8,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 6
+         } ],
+         "frameId": "3F99D466725D92A5EC19F87DF0E01BC4",
+         "localName": "html",
+         "nodeId": 6,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 5
+      } ],
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 5,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1683701993.559][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) 0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true
+}
+[1683701993.564][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) 0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1683701993.564][INFO]: Done waiting for pending navigations. Status: ok
+[1683701993.565][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=15) 0 {
+   "expression": "1"
+}
+[1683701993.568][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=15) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701993.568][INFO]: Waiting for pending navigations...
+[1683701993.568][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) 0 {
+   "expression": "1"
+}
+[1683701993.571][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701993.571][INFO]: Done waiting for pending navigations. Status: ok
+[1683701993.571][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701994.077][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701994.077][INFO]: Waiting for pending navigations...
+[1683701994.077][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) 0 {
+   "expression": "1"
+}
+[1683701994.079][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.079][INFO]: Done waiting for pending navigations. Status: ok
+[1683701994.079][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) 0 {
+   "expression": "1"
+}
+[1683701994.080][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.080][INFO]: Waiting for pending navigations...
+[1683701994.080][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) 0 {
+   "expression": "1"
+}
+[1683701994.081][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.081][INFO]: Done waiting for pending navigations. Status: ok
+[1683701994.081][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701994.586][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701994.586][INFO]: Waiting for pending navigations...
+[1683701994.586][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) 0 {
+   "expression": "1"
+}
+[1683701994.587][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.587][INFO]: Done waiting for pending navigations. Status: ok
+[1683701994.587][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) 0 {
+   "expression": "1"
+}
+[1683701994.587][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.587][INFO]: Waiting for pending navigations...
+[1683701994.587][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) 0 {
+   "expression": "1"
+}
+[1683701994.588][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701994.588][INFO]: Done waiting for pending navigations. Status: ok
+[1683701994.588][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701995.092][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701995.092][INFO]: Waiting for pending navigations...
+[1683701995.092][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) 0 {
+   "expression": "1"
+}
+[1683701995.093][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.093][INFO]: Done waiting for pending navigations. Status: ok
+[1683701995.093][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) 0 {
+   "expression": "1"
+}
+[1683701995.095][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.095][INFO]: Waiting for pending navigations...
+[1683701995.095][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) 0 {
+   "expression": "1"
+}
+[1683701995.096][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.096][INFO]: Done waiting for pending navigations. Status: ok
+[1683701995.096][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701995.599][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701995.599][INFO]: Waiting for pending navigations...
+[1683701995.599][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) 0 {
+   "expression": "1"
+}
+[1683701995.603][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.603][INFO]: Done waiting for pending navigations. Status: ok
+[1683701995.603][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) 0 {
+   "expression": "1"
+}
+[1683701995.605][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.605][INFO]: Waiting for pending navigations...
+[1683701995.605][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) 0 {
+   "expression": "1"
+}
+[1683701995.607][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701995.607][INFO]: Done waiting for pending navigations. Status: ok
+[1683701995.607][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701996.115][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701996.115][INFO]: Waiting for pending navigations...
+[1683701996.115][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) 0 {
+   "expression": "1"
+}
+[1683701996.118][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.118][INFO]: Done waiting for pending navigations. Status: ok
+[1683701996.118][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) 0 {
+   "expression": "1"
+}
+[1683701996.121][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.121][INFO]: Waiting for pending navigations...
+[1683701996.121][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) 0 {
+   "expression": "1"
+}
+[1683701996.123][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.123][INFO]: Done waiting for pending navigations. Status: ok
+[1683701996.123][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701996.630][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701996.631][INFO]: Waiting for pending navigations...
+[1683701996.631][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) 0 {
+   "expression": "1"
+}
+[1683701996.633][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.633][INFO]: Done waiting for pending navigations. Status: ok
+[1683701996.633][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) 0 {
+   "expression": "1"
+}
+[1683701996.637][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.637][INFO]: Waiting for pending navigations...
+[1683701996.637][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) 0 {
+   "expression": "1"
+}
+[1683701996.647][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701996.647][INFO]: Done waiting for pending navigations. Status: ok
+[1683701996.647][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701997.157][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701997.157][INFO]: Waiting for pending navigations...
+[1683701997.157][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) 0 {
+   "expression": "1"
+}
+[1683701997.160][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.160][INFO]: Done waiting for pending navigations. Status: ok
+[1683701997.160][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=36) 0 {
+   "expression": "1"
+}
+[1683701997.162][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=36) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.162][INFO]: Waiting for pending navigations...
+[1683701997.162][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=37) 0 {
+   "expression": "1"
+}
+[1683701997.164][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=37) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.164][INFO]: Done waiting for pending navigations. Status: ok
+[1683701997.164][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701997.670][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701997.670][INFO]: Waiting for pending navigations...
+[1683701997.670][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) 0 {
+   "expression": "1"
+}
+[1683701997.673][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.673][INFO]: Done waiting for pending navigations. Status: ok
+[1683701997.673][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) 0 {
+   "expression": "1"
+}
+[1683701997.675][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.675][INFO]: Waiting for pending navigations...
+[1683701997.675][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=40) 0 {
+   "expression": "1"
+}
+[1683701997.677][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=40) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701997.677][INFO]: Done waiting for pending navigations. Status: ok
+[1683701997.677][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701998.186][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701998.186][INFO]: Waiting for pending navigations...
+[1683701998.186][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) 0 {
+   "expression": "1"
+}
+[1683701998.191][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.191][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.191][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) 0 {
+   "expression": "1"
+}
+[1683701998.195][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.195][INFO]: Waiting for pending navigations...
+[1683701998.195][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=43) 0 {
+   "expression": "1"
+}
+[1683701998.197][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=43) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.197][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.197][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701998.702][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/fragment_onboarding_skip_button"
+}
+[1683701998.702][INFO]: Waiting for pending navigations...
+[1683701998.702][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=44) 0 {
+   "expression": "1"
+}
+[1683701998.706][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=44) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.706][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.706][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) 0 {
+   "expression": "1"
+}
+[1683701998.708][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.708][INFO]: Waiting for pending navigations...
+[1683701998.708][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) 0 {
+   "expression": "1"
+}
+[1683701998.710][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.710][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.710][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701998.728][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683701998.728][INFO]: Waiting for pending navigations...
+[1683701998.728][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) 0 {
+   "expression": "1"
+}
+[1683701998.730][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.730][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.730][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) 0 {
+   "expression": "1"
+}
+[1683701998.731][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.731][INFO]: Waiting for pending navigations...
+[1683701998.731][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) 0 {
+   "expression": "1"
+}
+[1683701998.732][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701998.732][INFO]: Done waiting for pending navigations. Status: ok
+[1683701998.732][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701999.236][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683701999.236][INFO]: Waiting for pending navigations...
+[1683701999.236][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) 0 {
+   "expression": "1"
+}
+[1683701999.239][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.239][INFO]: Done waiting for pending navigations. Status: ok
+[1683701999.239][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) 0 {
+   "expression": "1"
+}
+[1683701999.240][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.240][INFO]: Waiting for pending navigations...
+[1683701999.240][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=52) 0 {
+   "expression": "1"
+}
+[1683701999.241][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=52) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.241][INFO]: Done waiting for pending navigations. Status: ok
+[1683701999.241][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683701999.747][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683701999.747][INFO]: Waiting for pending navigations...
+[1683701999.748][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=53) 0 {
+   "expression": "1"
+}
+[1683701999.751][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=53) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.751][INFO]: Done waiting for pending navigations. Status: ok
+[1683701999.751][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=54) 0 {
+   "expression": "1"
+}
+[1683701999.754][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=54) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.754][INFO]: Waiting for pending navigations...
+[1683701999.754][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) 0 {
+   "expression": "1"
+}
+[1683701999.756][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683701999.756][INFO]: Done waiting for pending navigations. Status: ok
+[1683701999.756][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702000.260][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702000.260][INFO]: Waiting for pending navigations...
+[1683702000.260][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=56) 0 {
+   "expression": "1"
+}
+[1683702000.262][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=56) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.262][INFO]: Done waiting for pending navigations. Status: ok
+[1683702000.263][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=57) 0 {
+   "expression": "1"
+}
+[1683702000.265][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=57) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.265][INFO]: Waiting for pending navigations...
+[1683702000.265][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=58) 0 {
+   "expression": "1"
+}
+[1683702000.267][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=58) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.267][INFO]: Done waiting for pending navigations. Status: ok
+[1683702000.267][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702000.771][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702000.771][INFO]: Waiting for pending navigations...
+[1683702000.771][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=59) 0 {
+   "expression": "1"
+}
+[1683702000.774][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=59) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.774][INFO]: Done waiting for pending navigations. Status: ok
+[1683702000.774][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) 0 {
+   "expression": "1"
+}
+[1683702000.776][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.776][INFO]: Waiting for pending navigations...
+[1683702000.776][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=61) 0 {
+   "expression": "1"
+}
+[1683702000.778][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=61) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702000.778][INFO]: Done waiting for pending navigations. Status: ok
+[1683702000.778][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702001.285][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702001.285][INFO]: Waiting for pending navigations...
+[1683702001.285][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=62) 0 {
+   "expression": "1"
+}
+[1683702001.288][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=62) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.288][INFO]: Done waiting for pending navigations. Status: ok
+[1683702001.288][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=63) 0 {
+   "expression": "1"
+}
+[1683702001.291][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=63) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.291][INFO]: Waiting for pending navigations...
+[1683702001.291][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=64) 0 {
+   "expression": "1"
+}
+[1683702001.294][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=64) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.294][INFO]: Done waiting for pending navigations. Status: ok
+[1683702001.294][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702001.798][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702001.798][INFO]: Waiting for pending navigations...
+[1683702001.798][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=65) 0 {
+   "expression": "1"
+}
+[1683702001.800][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=65) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.800][INFO]: Done waiting for pending navigations. Status: ok
+[1683702001.800][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=66) 0 {
+   "expression": "1"
+}
+[1683702001.802][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=66) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.802][INFO]: Waiting for pending navigations...
+[1683702001.802][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=67) 0 {
+   "expression": "1"
+}
+[1683702001.804][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=67) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702001.804][INFO]: Done waiting for pending navigations. Status: ok
+[1683702001.804][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702002.308][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702002.308][INFO]: Waiting for pending navigations...
+[1683702002.308][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=68) 0 {
+   "expression": "1"
+}
+[1683702002.311][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=68) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.311][INFO]: Done waiting for pending navigations. Status: ok
+[1683702002.311][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=69) 0 {
+   "expression": "1"
+}
+[1683702002.312][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=69) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.313][INFO]: Waiting for pending navigations...
+[1683702002.313][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=70) 0 {
+   "expression": "1"
+}
+[1683702002.314][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=70) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.314][INFO]: Done waiting for pending navigations. Status: ok
+[1683702002.314][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702002.818][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702002.818][INFO]: Waiting for pending navigations...
+[1683702002.818][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=71) 0 {
+   "expression": "1"
+}
+[1683702002.820][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=71) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.820][INFO]: Done waiting for pending navigations. Status: ok
+[1683702002.821][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=72) 0 {
+   "expression": "1"
+}
+[1683702002.822][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=72) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.822][INFO]: Waiting for pending navigations...
+[1683702002.822][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=73) 0 {
+   "expression": "1"
+}
+[1683702002.824][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=73) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702002.824][INFO]: Done waiting for pending navigations. Status: ok
+[1683702002.824][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702003.329][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702003.329][INFO]: Waiting for pending navigations...
+[1683702003.329][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=74) 0 {
+   "expression": "1"
+}
+[1683702003.333][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=74) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.333][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.334][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=75) 0 {
+   "expression": "1"
+}
+[1683702003.337][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=75) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.337][INFO]: Waiting for pending navigations...
+[1683702003.337][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=76) 0 {
+   "expression": "1"
+}
+[1683702003.339][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=76) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.339][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.339][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702003.843][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_container"
+}
+[1683702003.843][INFO]: Waiting for pending navigations...
+[1683702003.843][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=77) 0 {
+   "expression": "1"
+}
+[1683702003.846][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=77) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.846][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.846][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=78) 0 {
+   "expression": "1"
+}
+[1683702003.848][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=78) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.848][INFO]: Waiting for pending navigations...
+[1683702003.848][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=79) 0 {
+   "expression": "1"
+}
+[1683702003.849][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=79) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.849][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.850][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702003.854][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702003.854][INFO]: Waiting for pending navigations...
+[1683702003.854][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=80) 0 {
+   "expression": "1"
+}
+[1683702003.855][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=80) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.855][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.855][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=81) 0 {
+   "expression": "1"
+}
+[1683702003.857][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=81) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.857][INFO]: Waiting for pending navigations...
+[1683702003.857][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=82) 0 {
+   "expression": "1"
+}
+[1683702003.858][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=82) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702003.858][INFO]: Done waiting for pending navigations. Status: ok
+[1683702003.858][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702004.363][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702004.363][INFO]: Waiting for pending navigations...
+[1683702004.363][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=83) 0 {
+   "expression": "1"
+}
+[1683702004.367][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=83) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.367][INFO]: Done waiting for pending navigations. Status: ok
+[1683702004.367][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=84) 0 {
+   "expression": "1"
+}
+[1683702004.369][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=84) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.369][INFO]: Waiting for pending navigations...
+[1683702004.369][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=85) 0 {
+   "expression": "1"
+}
+[1683702004.371][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=85) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.371][INFO]: Done waiting for pending navigations. Status: ok
+[1683702004.371][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702004.877][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702004.877][INFO]: Waiting for pending navigations...
+[1683702004.877][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=86) 0 {
+   "expression": "1"
+}
+[1683702004.881][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=86) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.881][INFO]: Done waiting for pending navigations. Status: ok
+[1683702004.881][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=87) 0 {
+   "expression": "1"
+}
+[1683702004.883][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=87) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.883][INFO]: Waiting for pending navigations...
+[1683702004.883][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=88) 0 {
+   "expression": "1"
+}
+[1683702004.885][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=88) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702004.885][INFO]: Done waiting for pending navigations. Status: ok
+[1683702004.885][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702005.391][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702005.391][INFO]: Waiting for pending navigations...
+[1683702005.391][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=89) 0 {
+   "expression": "1"
+}
+[1683702005.393][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=89) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.393][INFO]: Done waiting for pending navigations. Status: ok
+[1683702005.393][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=90) 0 {
+   "expression": "1"
+}
+[1683702005.394][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=90) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.395][INFO]: Waiting for pending navigations...
+[1683702005.395][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=91) 0 {
+   "expression": "1"
+}
+[1683702005.396][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=91) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.396][INFO]: Done waiting for pending navigations. Status: ok
+[1683702005.396][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702005.901][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702005.901][INFO]: Waiting for pending navigations...
+[1683702005.901][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=92) 0 {
+   "expression": "1"
+}
+[1683702005.904][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=92) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.904][INFO]: Done waiting for pending navigations. Status: ok
+[1683702005.905][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=93) 0 {
+   "expression": "1"
+}
+[1683702005.908][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=93) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.908][INFO]: Waiting for pending navigations...
+[1683702005.908][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=94) 0 {
+   "expression": "1"
+}
+[1683702005.910][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=94) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702005.910][INFO]: Done waiting for pending navigations. Status: ok
+[1683702005.910][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702006.415][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702006.415][INFO]: Waiting for pending navigations...
+[1683702006.415][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=95) 0 {
+   "expression": "1"
+}
+[1683702006.418][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=95) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.418][INFO]: Done waiting for pending navigations. Status: ok
+[1683702006.418][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=96) 0 {
+   "expression": "1"
+}
+[1683702006.420][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=96) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.420][INFO]: Waiting for pending navigations...
+[1683702006.420][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=97) 0 {
+   "expression": "1"
+}
+[1683702006.423][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=97) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.423][INFO]: Done waiting for pending navigations. Status: ok
+[1683702006.423][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702006.928][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702006.928][INFO]: Waiting for pending navigations...
+[1683702006.928][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=98) 0 {
+   "expression": "1"
+}
+[1683702006.931][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=98) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.931][INFO]: Done waiting for pending navigations. Status: ok
+[1683702006.932][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=99) 0 {
+   "expression": "1"
+}
+[1683702006.934][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=99) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.934][INFO]: Waiting for pending navigations...
+[1683702006.934][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=100) 0 {
+   "expression": "1"
+}
+[1683702006.937][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=100) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702006.937][INFO]: Done waiting for pending navigations. Status: ok
+[1683702006.937][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702007.442][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702007.442][INFO]: Waiting for pending navigations...
+[1683702007.442][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=101) 0 {
+   "expression": "1"
+}
+[1683702007.447][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=101) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.447][INFO]: Done waiting for pending navigations. Status: ok
+[1683702007.447][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=102) 0 {
+   "expression": "1"
+}
+[1683702007.450][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=102) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.450][INFO]: Waiting for pending navigations...
+[1683702007.450][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=103) 0 {
+   "expression": "1"
+}
+[1683702007.452][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=103) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.452][INFO]: Done waiting for pending navigations. Status: ok
+[1683702007.452][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702007.957][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702007.957][INFO]: Waiting for pending navigations...
+[1683702007.957][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=104) 0 {
+   "expression": "1"
+}
+[1683702007.959][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=104) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.959][INFO]: Done waiting for pending navigations. Status: ok
+[1683702007.959][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=105) 0 {
+   "expression": "1"
+}
+[1683702007.961][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=105) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.961][INFO]: Waiting for pending navigations...
+[1683702007.961][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=106) 0 {
+   "expression": "1"
+}
+[1683702007.963][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=106) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702007.963][INFO]: Done waiting for pending navigations. Status: ok
+[1683702007.963][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702008.468][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702008.468][INFO]: Waiting for pending navigations...
+[1683702008.468][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=107) 0 {
+   "expression": "1"
+}
+[1683702008.471][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=107) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.471][INFO]: Done waiting for pending navigations. Status: ok
+[1683702008.471][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=108) 0 {
+   "expression": "1"
+}
+[1683702008.473][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=108) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.474][INFO]: Waiting for pending navigations...
+[1683702008.474][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=109) 0 {
+   "expression": "1"
+}
+[1683702008.476][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=109) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.477][INFO]: Done waiting for pending navigations. Status: ok
+[1683702008.477][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702008.983][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/search_src_text"
+}
+[1683702008.983][INFO]: Waiting for pending navigations...
+[1683702008.983][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=110) 0 {
+   "expression": "1"
+}
+[1683702008.986][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=110) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.986][INFO]: Done waiting for pending navigations. Status: ok
+[1683702008.987][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=111) 0 {
+   "expression": "1"
+}
+[1683702008.989][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=111) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.989][INFO]: Waiting for pending navigations...
+[1683702008.989][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=112) 0 {
+   "expression": "1"
+}
+[1683702008.991][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=112) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.991][INFO]: Done waiting for pending navigations. Status: ok
+[1683702008.991][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702008.996][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702008.996][INFO]: Waiting for pending navigations...
+[1683702008.996][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=113) 0 {
+   "expression": "1"
+}
+[1683702008.998][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=113) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702008.998][INFO]: Done waiting for pending navigations. Status: ok
+[1683702008.999][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=114) 0 {
+   "expression": "1"
+}
+[1683702009.001][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=114) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702009.001][INFO]: Waiting for pending navigations...
+[1683702009.001][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=115) 0 {
+   "expression": "1"
+}
+[1683702009.002][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=115) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702009.002][INFO]: Done waiting for pending navigations. Status: ok
+[1683702009.002][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702009.508][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702009.508][INFO]: Waiting for pending navigations...
+[1683702009.508][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=116) 0 {
+   "expression": "1"
+}
+[1683702009.511][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=116) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702009.511][INFO]: Done waiting for pending navigations. Status: ok
+[1683702009.511][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=117) 0 {
+   "expression": "1"
+}
+[1683702009.514][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=117) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702009.514][INFO]: Waiting for pending navigations...
+[1683702009.514][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=118) 0 {
+   "expression": "1"
+}
+[1683702009.516][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=118) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702009.516][INFO]: Done waiting for pending navigations. Status: ok
+[1683702009.516][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702010.020][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702010.020][INFO]: Waiting for pending navigations...
+[1683702010.020][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=119) 0 {
+   "expression": "1"
+}
+[1683702010.022][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=119) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.022][INFO]: Done waiting for pending navigations. Status: ok
+[1683702010.022][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=120) 0 {
+   "expression": "1"
+}
+[1683702010.023][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=120) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.023][INFO]: Waiting for pending navigations...
+[1683702010.023][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=121) 0 {
+   "expression": "1"
+}
+[1683702010.025][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=121) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.025][INFO]: Done waiting for pending navigations. Status: ok
+[1683702010.025][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702010.529][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702010.529][INFO]: Waiting for pending navigations...
+[1683702010.529][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=122) 0 {
+   "expression": "1"
+}
+[1683702010.532][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=122) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.532][INFO]: Done waiting for pending navigations. Status: ok
+[1683702010.532][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=123) 0 {
+   "expression": "1"
+}
+[1683702010.534][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=123) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.534][INFO]: Waiting for pending navigations...
+[1683702010.534][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=124) 0 {
+   "expression": "1"
+}
+[1683702010.537][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=124) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702010.537][INFO]: Done waiting for pending navigations. Status: ok
+[1683702010.537][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702011.043][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702011.043][INFO]: Waiting for pending navigations...
+[1683702011.043][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=125) 0 {
+   "expression": "1"
+}
+[1683702011.047][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=125) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.047][INFO]: Done waiting for pending navigations. Status: ok
+[1683702011.048][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=126) 0 {
+   "expression": "1"
+}
+[1683702011.051][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=126) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.051][INFO]: Waiting for pending navigations...
+[1683702011.051][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=127) 0 {
+   "expression": "1"
+}
+[1683702011.053][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=127) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.053][INFO]: Done waiting for pending navigations. Status: ok
+[1683702011.053][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702011.559][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702011.559][INFO]: Waiting for pending navigations...
+[1683702011.559][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=128) 0 {
+   "expression": "1"
+}
+[1683702011.562][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=128) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.562][INFO]: Done waiting for pending navigations. Status: ok
+[1683702011.563][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=129) 0 {
+   "expression": "1"
+}
+[1683702011.564][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=129) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.564][INFO]: Waiting for pending navigations...
+[1683702011.564][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=130) 0 {
+   "expression": "1"
+}
+[1683702011.566][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=130) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702011.566][INFO]: Done waiting for pending navigations. Status: ok
+[1683702011.566][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702012.070][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702012.070][INFO]: Waiting for pending navigations...
+[1683702012.070][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=131) 0 {
+   "expression": "1"
+}
+[1683702012.079][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=131) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.079][INFO]: Done waiting for pending navigations. Status: ok
+[1683702012.079][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=132) 0 {
+   "expression": "1"
+}
+[1683702012.081][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=132) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.081][INFO]: Waiting for pending navigations...
+[1683702012.081][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=133) 0 {
+   "expression": "1"
+}
+[1683702012.084][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=133) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.084][INFO]: Done waiting for pending navigations. Status: ok
+[1683702012.084][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702012.591][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702012.591][INFO]: Waiting for pending navigations...
+[1683702012.591][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=134) 0 {
+   "expression": "1"
+}
+[1683702012.596][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=134) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.596][INFO]: Done waiting for pending navigations. Status: ok
+[1683702012.596][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=135) 0 {
+   "expression": "1"
+}
+[1683702012.599][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=135) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.599][INFO]: Waiting for pending navigations...
+[1683702012.599][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=136) 0 {
+   "expression": "1"
+}
+[1683702012.600][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=136) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702012.600][INFO]: Done waiting for pending navigations. Status: ok
+[1683702012.600][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702013.106][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702013.106][INFO]: Waiting for pending navigations...
+[1683702013.106][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=137) 0 {
+   "expression": "1"
+}
+[1683702013.111][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=137) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.111][INFO]: Done waiting for pending navigations. Status: ok
+[1683702013.111][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=138) 0 {
+   "expression": "1"
+}
+[1683702013.114][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=138) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.114][INFO]: Waiting for pending navigations...
+[1683702013.114][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=139) 0 {
+   "expression": "1"
+}
+[1683702013.116][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=139) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.116][INFO]: Done waiting for pending navigations. Status: ok
+[1683702013.116][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702013.623][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702013.623][INFO]: Waiting for pending navigations...
+[1683702013.623][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=140) 0 {
+   "expression": "1"
+}
+[1683702013.627][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=140) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.627][INFO]: Done waiting for pending navigations. Status: ok
+[1683702013.628][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=141) 0 {
+   "expression": "1"
+}
+[1683702013.630][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=141) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.630][INFO]: Waiting for pending navigations...
+[1683702013.630][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=142) 0 {
+   "expression": "1"
+}
+[1683702013.632][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=142) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702013.632][INFO]: Done waiting for pending navigations. Status: ok
+[1683702013.632][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702014.137][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND FindElements {
+   "using": "id",
+   "value": "org.wikipedia:id/page_list_item_title"
+}
+[1683702014.138][INFO]: Waiting for pending navigations...
+[1683702014.138][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=143) 0 {
+   "expression": "1"
+}
+[1683702014.141][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=143) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702014.141][INFO]: Done waiting for pending navigations. Status: ok
+[1683702014.142][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=144) 0 {
+   "expression": "1"
+}
+[1683702014.145][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=144) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702014.145][INFO]: Waiting for pending navigations...
+[1683702014.145][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=145) 0 {
+   "expression": "1"
+}
+[1683702014.146][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=145) 0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1683702014.146][INFO]: Done waiting for pending navigations. Status: ok
+[1683702014.146][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE FindElements ERROR invalid argument: invalid locator
+  (Session info: chrome=91.0.4472.114)
+[1683702014.235][INFO]: [02a94349e53928fd54ba6865bdfe5f73] COMMAND Quit {
+
+}
+[1683702014.235][DEBUG]: Sending adb command: host:transport:emulator-5554|shell:am force-stop com.android.chrome
+[1683702014.302][DEBUG]: Received adb response: 
+[1683702014.302][DEBUG]: Sending adb command: host-serial:emulator-5554:killforward:tcp:52337
+[1683702014.302][DEBUG]: ADB server responded with "OKAYOKAY" instead of "OKAY".
+[1683702014.302][DEBUG]: Received adb response: 
+[1683702014.302][INFO]: [02a94349e53928fd54ba6865bdfe5f73] RESPONSE Quit
+[1683702014.302][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1683702014.302][DEBUG]: Log type 'browser' lost 0 entries on destruction
